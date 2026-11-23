@@ -409,8 +409,8 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 // Settings: where sign-ups go, and the Kickstarter page once it exists (leave empty until then).
 const WAITLIST_URL = "https://umeiddjtiirjtcxzurkw.supabase.co/functions/v1/waitlist";
 const KICKSTARTER_URL = "";
-// False until the waitlist function is live: the forms then say so and take nothing.
-const SIGNUPS_OPEN = false;
+// Set to false to close the forms: they say "Sign-ups open soon" and take nothing.
+const SIGNUPS_OPEN = true;
 
 if (KICKSTARTER_URL) {
   document.getElementById("ks-title").textContent = "We're on Kickstarter";
